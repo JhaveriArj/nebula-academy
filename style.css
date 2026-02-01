@@ -252,6 +252,9 @@ main {
 .hero-astronaut {
   margin-bottom: 1rem;
   animation: float 4s ease-in-out infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-logo {
@@ -259,6 +262,7 @@ main {
   height: auto;
   display: block;
   object-fit: contain;
+  margin: 0 auto;
 }
 
 .hero-byline {
