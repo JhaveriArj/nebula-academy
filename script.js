@@ -18,7 +18,6 @@
           tip: 'In Python we use print() to show text. Type the line in the mission and click Run My Code.',
           hint: 'Try: print("Hello, Nebula!")',
           instructions: '<p>Use <code>print()</code> to show a message. Type <code>print("Hello, Nebula!")</code> in the editor and click <strong>Run My Code</strong>.</p>',
-          starterCode: '',
         },
         {
           id: 'variables',
@@ -26,7 +25,6 @@
           tip: 'Store text in a variable, then print it. Our simulator supports name = "value" and print(name).',
           hint: 'Create a variable: name = "Syrius" then print(name)',
           instructions: '<p>Store your name in a variable: <code>name = "YourName"</code>. Then <code>print(name)</code> to see it in the output.</p>',
-          starterCode: '',
         },
         {
           id: 'multiple-prints',
@@ -34,7 +32,6 @@
           tip: 'Each print() sends one line. Use several prints to build a short story or intro.',
           hint: 'Write 3–4 print statements, one per line.',
           instructions: '<p>Write several <code>print()</code> statements—one per line—to introduce yourself: name, mission, and a short message.</p>',
-          starterCode: '',
         },
         {
           id: 'numbers',
@@ -42,7 +39,6 @@
           tip: 'Our simulator can evaluate simple math. Try print(2 + 3) or print(10 - 4).',
           hint: 'Use print(5 + 5) or print(3 * 4)',
           instructions: '<p>Python can do math. Try <code>print(2 + 3)</code> or <code>print(10 - 4)</code>. Our simulator supports basic arithmetic in print().</p>',
-          starterCode: '',
         },
         {
           id: 'comments',
@@ -50,7 +46,6 @@
           tip: 'Lines starting with # are ignored. Use them to explain your code.',
           hint: 'Add a line like # This is my first program',
           instructions: '<p>Comments start with <code>#</code>. They are ignored when the code runs. Add a comment above your print to explain what it does.</p>',
-          starterCode: '',
         },
       ],
     },
@@ -64,7 +59,6 @@
           tip: 'FTC = First Tech Challenge. You program robots that compete in games. Code controls motors and sensors.',
           hint: 'FTC robots use code to move motors and read sensors.',
           instructions: '<p><strong>First Tech Challenge (FTC)</strong> is a robotics competition. Teams build and program robots to complete tasks. You write code (often in Java or blocks) to control <strong>motors</strong>, read <strong>sensors</strong>, and make decisions.</p><p>Use the editor to print your team name or robot name—just like naming your mission in Python!</p>',
-          starterCode: 'team = "Nebula Robotics"\nprint("Team:", team)\nprint("Ready for competition!")',
         },
         {
           id: 'ftc-drivetrain',
@@ -72,7 +66,6 @@
           tip: 'The drivetrain is the wheels and motors that move the robot. Code tells each motor how fast and which direction.',
           hint: 'In real FTC code you set motor power (e.g. 0.5 = half speed).',
           instructions: '<p>The <strong>drivetrain</strong> moves your robot. In FTC you set <strong>motor power</strong> (e.g. 0.0 to 1.0) to go forward, backward, or turn.</p><p>Simulate a simple "start" command: print that your drivetrain is enabled.</p>',
-          starterCode: 'print("Drivetrain: ENABLED")\nprint("Left motor: 0.5")\nprint("Right motor: 0.5")\nprint("Moving forward!")',
         },
         {
           id: 'ftc-sensors',
@@ -80,7 +73,6 @@
           tip: 'Sensors give the robot information: distance, color, touch. Your code reads sensor values and decides what to do.',
           hint: 'Example: if distance_sensor < 10 then stop or turn.',
           instructions: '<p>Robots use <strong>sensors</strong> (distance, color, touch) to understand the world. Your code reads values and makes decisions—e.g. "if distance &lt; 10 cm, stop."</p><p>Print simulated sensor readings to practice output.</p>',
-          starterCode: 'print("Distance sensor: 25 cm")\nprint("Color: RED")\nprint("Touch: not pressed")',
         },
         {
           id: 'ftc-autonomous',
@@ -88,7 +80,6 @@
           tip: 'Autonomous = robot runs on its own for 30 seconds. TeleOp = drivers control it with gamepads.',
           hint: 'Autonomous code runs first; then drivers take over.',
           instructions: '<p><strong>Autonomous</strong>: the robot runs a pre-programmed routine (no driver). <strong>TeleOp</strong>: drivers use gamepads to control it.</p><p>Print a simple "phase" message as if your program is switching from auto to teleop.</p>',
-          starterCode: 'print("Phase: AUTONOMOUS")\nprint("Running routine...")\nprint("Phase: TELEOP")\nprint("Drivers in control!")',
         },
         {
           id: 'ftc-strategy',
@@ -96,7 +87,6 @@
           tip: 'FTC games have scoring elements. Your code and driver strategy decide when to pick up, place, or defend.',
           hint: 'Plan: score high-value elements first, then defend or cycle.',
           instructions: '<p>Each FTC game has <strong>scoring</strong> rules. Good code + strategy = consistent scoring. Practice by printing a simple game plan (e.g. "1. Grab element 2. Place in goal 3. Park").</p>',
-          starterCode: 'print("Strategy: Score high first")\nprint("Step 1: Grab element")\nprint("Step 2: Place in goal")\nprint("Step 3: Park in zone")',
         },
       ],
     },
@@ -110,7 +100,6 @@
           tip: 'FTC = First Tech Challenge. You program robots that compete in games. Code controls motors and sensors.',
           hint: 'FTC robots use code to move motors and read sensors.',
           instructions: '<p><strong>First Tech Challenge (FTC)</strong> is a robotics competition. Teams build and program robots to complete tasks. You write code (often in Java or blocks) to control <strong>motors</strong>, read <strong>sensors</strong>, and make decisions.</p><p>Use the editor to print your team name or robot name—just like naming your mission in Python!</p>',
-          starterCode: 'team = "Nebula Robotics"\nprint("Team:", team)\nprint("Ready for competition!")',
         },
         {
           id: 'ftc-drivetrain',
@@ -118,7 +107,6 @@
           tip: 'The drivetrain is the wheels and motors that move the robot. Code tells each motor how fast and which direction.',
           hint: 'In real FTC code you set motor power (e.g. 0.5 = half speed).',
           instructions: '<p>The <strong>drivetrain</strong> moves your robot. In FTC you set <strong>motor power</strong> (e.g. 0.0 to 1.0) to go forward, backward, or turn.</p><p>Simulate a simple "start" command: print that your drivetrain is enabled.</p>',
-          starterCode: 'print("Drivetrain: ENABLED")\nprint("Left motor: 0.5")\nprint("Right motor: 0.5")\nprint("Moving forward!")',
         },
         {
           id: 'ftc-sensors',
@@ -126,7 +114,6 @@
           tip: 'Sensors give the robot information: distance, color, touch. Your code reads sensor values and decides what to do.',
           hint: 'Example: if distance_sensor < 10 then stop or turn.',
           instructions: '<p>Robots use <strong>sensors</strong> (distance, color, touch) to understand the world. Your code reads values and makes decisions—e.g. "if distance &lt; 10 cm, stop."</p><p>Print simulated sensor readings to practice output.</p>',
-          starterCode: 'print("Distance sensor: 25 cm")\nprint("Color: RED")\nprint("Touch: not pressed")',
         },
         {
           id: 'ftc-autonomous',
@@ -134,7 +121,6 @@
           tip: 'Autonomous = robot runs on its own for 30 seconds. TeleOp = drivers control it with gamepads.',
           hint: 'Autonomous code runs first; then drivers take over.',
           instructions: '<p><strong>Autonomous</strong>: the robot runs a pre-programmed routine (no driver). <strong>TeleOp</strong>: drivers use gamepads to control it.</p><p>Print a simple "phase" message as if your program is switching from auto to teleop.</p>',
-          starterCode: 'print("Phase: AUTONOMOUS")\nprint("Running routine...")\nprint("Phase: TELEOP")\nprint("Drivers in control!")',
         },
         {
           id: 'ftc-strategy',
@@ -142,7 +128,6 @@
           tip: 'FTC games have scoring elements. Your code and driver strategy decide when to pick up, place, or defend.',
           hint: 'Plan: score high-value elements first, then defend or cycle.',
           instructions: '<p>Each FTC game has <strong>scoring</strong> rules. Good code + strategy = consistent scoring. Practice by printing a simple game plan (e.g. "1. Grab element 2. Place in goal 3. Park").</p>',
-          starterCode: 'print("Strategy: Score high first")\nprint("Step 1: Grab element")\nprint("Step 2: Place in goal")\nprint("Step 3: Park in zone")',
         },
       ],
 
@@ -332,8 +317,6 @@
     $lessonTip.textContent = step.tip;
 
     const saved = loadCodeForStep(level.id, step.id);
-    $codeEditor.value = saved != null ? saved : step.starterCode;
-
     $outputConsole.textContent = 'Click "Run My Code" when ready!';
     $outputConsole.classList.remove('error', 'running');
 
@@ -376,7 +359,6 @@
   function resetCode() {
     const curr = getCurrentStep();
     if (!curr) return;
-    $codeEditor.value = curr.step.starterCode;
     $outputConsole.textContent = 'Click "Run My Code" when ready!';
     $outputConsole.classList.remove('error', 'running');
   }
