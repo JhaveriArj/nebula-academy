@@ -1,0 +1,144 @@
+<!--
+  Nebula Coding Academy — Purple astronaut theme, level/step course.
+  Single-page: loading screen, landing, level map, lesson view with Syrius, mission, editor, level complete modal.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Nebula Coding Academy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-stars" aria-hidden="true"></div>
+  <div class="bg-gradient" aria-hidden="true"></div>
+
+  <!-- Loading screen (Python engine) -->
+  <div id="loading-screen" class="loading-screen">
+    <div class="loading-content">
+      <span class="loading-icon" aria-hidden="true">🐍</span>
+      <h2>Loading Python Engine...</h2>
+      <p>Preparing your coding station...</p>
+      <p class="loading-sub">(One-time setup, takes a few seconds)</p>
+      <div class="loading-bar"><div class="loading-fill"></div></div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <a href="#" class="logo" data-nav="landing">The Nebula Coding Academy</a>
+    <nav class="main-nav">
+      <a href="#" data-nav="landing">Home</a>
+      <a href="#" data-nav="level-map">Level Map</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Landing -->
+    <section id="landing" class="view active">
+      <div class="hero">
+        <div class="hero-astronaut" aria-hidden="true">👨‍🚀</div>
+        <h1>Learn to Code with Syrius the Astronaut</h1>
+        <p class="tagline">Master Python basics, then build toward FTC robotics. Your mission starts here.</p>
+        <a href="#" class="btn btn-primary btn-glow" data-nav="level-map">Launch Course</a>
+      </div>
+      <div class="features">
+        <article class="card card-float">
+          <span class="card-icon">🐍</span>
+          <h3>Python Basics</h3>
+          <p>Variables, loops, conditionals—run code right in your browser.</p>
+        </article>
+        <article class="card card-float">
+          <span class="card-icon">🤖</span>
+          <h3>FTC Robotics</h3>
+          <p>Apply coding to motors, sensors, and competition strategy.</p>
+        </article>
+        <article class="card card-float">
+          <span class="card-icon">⭐</span>
+          <h3>Track Progress</h3>
+          <p>Levels and steps saved locally. Pick up anytime.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Level map -->
+    <section id="level-map" class="view">
+      <h2 class="section-title">🗺️ Level Map</h2>
+      <p class="section-sub">Level Progress: <strong id="level-progress-summary">0/2</strong> levels</p>
+      <div id="level-map-list" class="level-map-list"></div>
+    </section>
+
+    <!-- Lesson / step view -->
+    <section id="lesson-view" class="view">
+      <div class="lesson-top-bar">
+        <a href="#" class="back-link" data-nav="level-map">← Level Map</a>
+        <div class="step-indicator">
+          <span id="step-label">Step 1 of 1</span>
+          <span class="level-badge" id="level-badge">Level 1</span>
+        </div>
+      </div>
+
+      <div class="lesson-layout">
+        <aside class="mission-panel">
+          <div class="syrius-card">
+            <div class="syrius-avatar" aria-hidden="true">👨‍🚀</div>
+            <p class="syrius-name">Syrius</p>
+          </div>
+          <div class="tip-box">
+            <h4>💡 Syrius' Tip</h4>
+            <p id="lesson-tip"></p>
+          </div>
+          <h3>🎯 Your Mission</h3>
+          <div id="lesson-instructions" class="instructions-content"></div>
+          <div class="lesson-actions">
+            <button type="button" id="hint-btn" class="btn btn-hint">💡 Hint</button>
+            <button type="button" id="next-step-btn" class="btn btn-primary">Next ⭐</button>
+          </div>
+        </aside>
+
+        <div class="editor-column">
+          <div class="editor-panel">
+            <div class="editor-toolbar">
+              <span class="editor-label">🐍 Python Editor</span>
+              <div class="editor-buttons">
+                <button type="button" id="run-btn" class="btn btn-run">▶️ Run My Code</button>
+                <button type="button" id="reset-btn" class="btn btn-reset">🔄 Reset</button>
+              </div>
+            </div>
+            <textarea id="code-editor" class="code-editor" spellcheck="false" placeholder="# Write your code here..."></textarea>
+          </div>
+          <div class="output-panel">
+            <h4>Output Console</h4>
+            <pre id="output-console" class="output-console">Click "Run My Code" when ready!</pre>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Level complete modal -->
+  <div id="level-complete-modal" class="modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content modal-celebrate">
+      <div class="modal-confetti" aria-hidden="true">🎉🏆🎊</div>
+      <h2 id="modal-title">Level Complete!</h2>
+      <p>You're doing great!</p>
+      <button type="button" id="modal-continue" class="btn btn-primary btn-glow">Continue 🚀</button>
+    </div>
+  </div>
+
+  <!-- Hint overlay (optional) -->
+  <div id="hint-overlay" class="hint-overlay" aria-hidden="true">
+    <div class="hint-content">
+      <h4>💡 Hint</h4>
+      <p id="hint-text"></p>
+      <button type="button" id="hint-close" class="btn btn-secondary">Got it</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
