@@ -146,7 +146,7 @@
         },
       ],
 
-    }
+    },
   ];
 
   const STORAGE_KEY_PROGRESS = 'nebula-academy-progress';
