@@ -410,7 +410,15 @@
     document.querySelectorAll('[data-nav]').forEach((el) => {
       el.addEventListener('click', (e) => {
         e.preventDefault();
-        showView(el.getAttribute('data-nav'));
+        const viewId = el.getAttribute('data-nav');
+        const scrollId = el.getAttribute('data-scroll');
+        showView(viewId);
+        if (scrollId) {
+          requestAnimationFrame(() => {
+            const target = document.getElementById(scrollId);
+            if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          });
+        }
       });
     });
 
