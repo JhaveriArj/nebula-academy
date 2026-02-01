@@ -161,11 +161,21 @@ body {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
   font-weight: 700;
   font-size: 1.15rem;
   color: var(--text);
   text-decoration: none;
   letter-spacing: -0.02em;
+}
+
+.logo-img {
+  height: 36px;
+  width: auto;
+  display: block;
+  object-fit: contain;
 }
 
 .main-nav {
@@ -240,9 +250,22 @@ main {
 }
 
 .hero-astronaut {
-  font-size: 4.5rem;
   margin-bottom: 1rem;
   animation: float 4s ease-in-out infinite;
+}
+
+.hero-logo {
+  width: 140px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.hero-byline {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin: -0.5rem 0 1.5rem;
+  font-weight: 500;
 }
 
 @keyframes float {
@@ -643,9 +666,16 @@ main {
 }
 
 .syrius-avatar {
-  font-size: 3.5rem;
   margin-bottom: 0.5rem;
   animation: float 4s ease-in-out infinite;
+}
+
+.syrius-logo {
+  width: 80px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
 }
 
 .syrius-name {
@@ -930,6 +960,15 @@ main {
   max-width: 1100px;
   margin: 0 auto;
   text-align: center;
+}
+
+.footer-logo {
+  width: 48px;
+  height: auto;
+  display: block;
+  margin: 0 auto 0.75rem;
+  object-fit: contain;
+  opacity: 0.95;
 }
 
 .footer-brand {
